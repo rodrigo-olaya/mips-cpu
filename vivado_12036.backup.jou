@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr 25 13:24:38 2023
+# Process ID: 12036
+# Current directory: D:/VERILOG/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3920 D:\VERILOG\Lab5\Lab5.xpr
+# Log file: D:/VERILOG/Lab5/vivado.log
+# Journal file: D:/VERILOG/Lab5\vivado.jou
+# Running On: E5-CSE-136-15, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 16888 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/VERILOG/Lab5/Lab5.xpr
+update_compile_order -fileset sources_1

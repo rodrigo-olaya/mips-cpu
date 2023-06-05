@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu May  4 21:13:49 2023
+# Process ID: 5632
+# Current directory: D:/VERILOG/331finalproject/331finalproject.runs/impl_1
+# Command line: vivado.exe -log datapath.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source datapath.tcl -notrace
+# Log file: D:/VERILOG/331finalproject/331finalproject.runs/impl_1/datapath.vdi
+# Journal file: D:/VERILOG/331finalproject/331finalproject.runs/impl_1\vivado.jou
+# Running On: E5-CSE-136-05, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 16888 MB
+#-----------------------------------------------------------
+source datapath.tcl -notrace

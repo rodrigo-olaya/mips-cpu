@@ -1,0 +1,122 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu May  4 21:09:53 2023
+| Host         : E5-CSE-136-05 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file datapath_control_sets_placed.rpt
+| Design       : datapath
+| Device       : xc7z012s
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    65 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |     9 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    34 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              39 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              40 |           26 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             992 |          432 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-------------------------------+------------------------------+------------------+----------------+--------------+
+|      Clock Signal      |         Enable Signal         |       Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+-------------------------------+------------------------------+------------------+----------------+--------------+
+|  sub3/aluc_reg[1]_1    |                               |                              |                1 |              1 |         1.00 |
+|  sub/pcout_reg[6]_2    |                               | sub/pcout_reg[6]_6           |                1 |              1 |         1.00 |
+|  sub/pcout_reg[2]_0    |                               | sub/pcout_reg[3]_2           |                1 |              1 |         1.00 |
+|  sub/pcout_reg[2]_1    |                               | sub/pcout_reg[6]_8           |                1 |              1 |         1.00 |
+|  sub/pcout_reg[2]_3    |                               | sub/pcout_reg[3]_2           |                1 |              1 |         1.00 |
+|  sub/pcout_reg[5]_0    |                               | sub/pcout_reg[2]_5           |                1 |              1 |         1.00 |
+|  sub/pcout_reg[6]_1    |                               | sub/pcout_reg[6]_7           |                1 |              1 |         1.00 |
+|  sub/pcout_reg[6]_5    |                               |                              |                1 |              2 |         2.00 |
+|  sub/pcout_reg[6]_3[0] |                               | sub/AR[0]                    |                1 |              2 |         2.00 |
+|  sub/E[0]              |                               |                              |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_6_4[0] | sub4/register[1][31]_i_3_n_1 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_4_1[0] | sub4/register[1][31]_i_3_n_1 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_7_3[0] | sub4/register[1][31]_i_3_n_1 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_5_6[0] | sub4/register[1][31]_i_3_n_1 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_7_5[0] | sub4/register[1][31]_i_3_n_1 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_8_3[0] | sub4/register[1][31]_i_3_n_1 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_7_4[0] | sub4/register[1][31]_i_3_n_1 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_6_3[0] | sub4/register[1][31]_i_3_n_1 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_5_2[0] | sub4/register[1][31]_i_3_n_1 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_5_4[0] | sub4/register[1][31]_i_3_n_1 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_7_1[0] | sub4/register[1][31]_i_3_n_1 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_5_5[0] | sub4/register[1][31]_i_3_n_1 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_6_5[0] | sub4/register[1][31]_i_3_n_1 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_8_0[0] | sub4/register[1][31]_i_3_n_1 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_8_2[0] | sub4/register[1][31]_i_3_n_1 |               25 |             32 |         1.28 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_5_3[0] | sub4/register[1][31]_i_3_n_1 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_6_2[0] | sub4/register[1][31]_i_3_n_1 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_8_5[0] | sub4/register[1][31]_i_3_n_1 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_5_1[0] | sub4/register[1][31]_i_3_n_1 |               22 |             32 |         1.45 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_7_6[0] | sub4/register[1][31]_i_3_n_1 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_6_6[0] | sub4/register[1][31]_i_3_n_1 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_4_0[0] | sub4/register[1][31]_i_3_n_1 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_6_1[0] | sub4/register[1][31]_i_3_n_1 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG         |                               |                              |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG         | sub3/wmem                     |                              |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG         | sub3/E[0]                     | sub4/register[1][31]_i_3_n_1 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_7_2[0] | sub4/register[1][31]_i_3_n_1 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_8_1[0] | sub4/register[1][31]_i_3_n_1 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_7_0[0] | sub4/register[1][31]_i_3_n_1 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_8_4[0] | sub4/register[1][31]_i_3_n_1 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_5_0[0] | sub4/register[1][31]_i_3_n_1 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_6_0[0] | sub4/register[1][31]_i_3_n_1 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG         | sub3/register[1][31]_i_4_2[0] | sub4/register[1][31]_i_3_n_1 |               12 |             32 |         2.67 |
+|  n_0_1169_BUFG         |                               | sub3/AR[0]                   |               19 |             32 |         1.68 |
++------------------------+-------------------------------+------------------------------+------------------+----------------+--------------+
+
+
